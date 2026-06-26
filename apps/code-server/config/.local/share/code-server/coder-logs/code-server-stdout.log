@@ -1,0 +1,197 @@
+[2026-06-26T11:50:52.953Z] info  code-server 4.105.1 811ec6c1d60add2eb92446161ca812828fdbaa7f
+[2026-06-26T11:50:52.955Z] info  Using user-data-dir /config/data
+[2026-06-26T11:50:52.976Z] info  Using config file /config/.config/code-server/config.yaml
+[2026-06-26T11:50:52.976Z] info  HTTP server listening on http://0.0.0.0:8443/
+[2026-06-26T11:50:52.976Z] info    - Authentication is enabled
+[2026-06-26T11:50:52.976Z] info      - Using password from $PASSWORD
+[2026-06-26T11:50:52.976Z] info    - Not serving HTTPS
+[2026-06-26T11:50:52.976Z] info  Session server listening on /config/data/code-server-ipc.sock
+[17:21:21] 
+
+
+
+
+[17:21:21] Extension host agent started.
+[17:21:21] Started initializing default profile extensions in extensions installation folder. file:///config/extensions
+[17:21:21] Completed initializing default profile extensions in extensions installation folder. file:///config/extensions
+[2026-06-26T11:55:32.008Z] info  code-server 4.105.1 811ec6c1d60add2eb92446161ca812828fdbaa7f
+[2026-06-26T11:55:32.009Z] info  Using user-data-dir /config/data
+[2026-06-26T11:55:32.030Z] info  Using config file /config/.config/code-server/config.yaml
+[2026-06-26T11:55:32.031Z] info  HTTP server listening on http://0.0.0.0:8443/
+[2026-06-26T11:55:32.031Z] info    - Authentication is enabled
+[2026-06-26T11:55:32.031Z] info      - Using password from $PASSWORD
+[2026-06-26T11:55:32.031Z] info    - Not serving HTTPS
+[2026-06-26T11:55:32.031Z] info  Session server listening on /config/data/code-server-ipc.sock
+[17:25:42] 
+
+
+
+
+[17:25:42] Extension host agent started.
+[17:26:38] [192.168.1.9][53aee3f8][ManagementConnection] New connection established.
+[17:26:40] [192.168.1.9][97c86316][ExtensionHostConnection] New connection established.
+[17:26:40] [192.168.1.9][97c86316][ExtensionHostConnection] <1280> Launched Extension Host Process.
+[17:27:58] Getting Manifest... ms-azuretools.vscode-docker
+[17:27:58] Installing extension: ms-azuretools.vscode-docker {
+  isMachineScoped: false,
+  installPreReleaseVersion: false,
+  pinned: false,
+  isApplicationScoped: false,
+  profileLocation: Vn {
+    scheme: 'file',
+    authority: '',
+    path: '/config/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///config/extensions/extensions.json',
+    _fsPath: '/config/extensions/extensions.json'
+  },
+  productVersion: { version: '1.105.1', date: '2025-10-17T22:37:44.991Z' }
+}
+[17:27:58] Getting Manifest... ms-azuretools.vscode-containers
+[17:27:59] Installing extension: ms-azuretools.vscode-containers {
+  isMachineScoped: false,
+  installPreReleaseVersion: false,
+  pinned: false,
+  isApplicationScoped: false,
+  profileLocation: Vn {
+    scheme: 'file',
+    authority: '',
+    path: '/config/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///config/extensions/extensions.json',
+    _fsPath: '/config/extensions/extensions.json'
+  },
+  productVersion: { version: '1.105.1', date: '2025-10-17T22:37:44.991Z' },
+  installGivenVersion: false,
+  context: { dependecyOrPackExtensionInstall: true }
+}
+[17:27:59] Extracted extension to file:///config/extensions/ms-azuretools.vscode-docker-2.0.0-universal: ms-azuretools.vscode-docker
+[17:27:59] Renamed to /config/extensions/ms-azuretools.vscode-docker-2.0.0-universal
+[17:28:00] Extracted extension to file:///config/extensions/ms-azuretools.vscode-containers-2.4.5-universal: ms-azuretools.vscode-containers
+[17:28:00] Renamed to /config/extensions/ms-azuretools.vscode-containers-2.4.5-universal
+[17:28:00] Extension installed successfully: ms-azuretools.vscode-docker file:///config/extensions/extensions.json
+[17:28:00] Extension installed successfully: ms-azuretools.vscode-containers file:///config/extensions/extensions.json
+[17:29:35] Getting Manifest... zhuangtongfa.material-theme
+[17:29:35] Installing extension: zhuangtongfa.material-theme {
+  isMachineScoped: false,
+  installPreReleaseVersion: false,
+  pinned: false,
+  isApplicationScoped: false,
+  profileLocation: Vn {
+    scheme: 'file',
+    authority: '',
+    path: '/config/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///config/extensions/extensions.json',
+    _fsPath: '/config/extensions/extensions.json'
+  },
+  productVersion: { version: '1.105.1', date: '2025-10-17T22:37:44.991Z' }
+}
+[17:29:36] Extracted extension to file:///config/extensions/zhuangtongfa.material-theme-3.19.0-universal: zhuangtongfa.material-theme
+[17:29:36] Renamed to /config/extensions/zhuangtongfa.material-theme-3.19.0-universal
+[17:29:36] Extension installed successfully: zhuangtongfa.material-theme file:///config/extensions/extensions.json
+[17:29:53] Uninstalling extension from the profile: zhuangtongfa.material-theme@3.19.0 file:///config/extensions/extensions.json
+[17:29:53] Marked extension as removed zhuangtongfa.material-theme-3.19.0-universal
+[17:29:53] Successfully uninstalled extension from the profile zhuangtongfa.material-theme@3.19.0 file:///config/extensions/extensions.json
+[17:30:28] Getting Manifest... dracula-theme.theme-dracula
+[17:30:34] Installing extension: dracula-theme.theme-dracula {
+  isMachineScoped: false,
+  installPreReleaseVersion: false,
+  pinned: false,
+  isApplicationScoped: false,
+  profileLocation: Vn {
+    scheme: 'file',
+    authority: '',
+    path: '/config/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///config/extensions/extensions.json',
+    _fsPath: '/config/extensions/extensions.json'
+  },
+  productVersion: { version: '1.105.1', date: '2025-10-17T22:37:44.991Z' }
+}
+[17:30:35] Extracted extension to file:///config/extensions/dracula-theme.theme-dracula-2.25.1-universal: dracula-theme.theme-dracula
+[17:30:35] Renamed to /config/extensions/dracula-theme.theme-dracula-2.25.1-universal
+[17:30:35] Extension installed successfully: dracula-theme.theme-dracula file:///config/extensions/extensions.json
+[17:32:02] Getting Manifest... ms-vscode.theme-markdownkit
+[17:32:03] Installing extension: ms-vscode.theme-markdownkit {
+  isMachineScoped: false,
+  installPreReleaseVersion: false,
+  pinned: false,
+  isApplicationScoped: false,
+  profileLocation: Vn {
+    scheme: 'file',
+    authority: '',
+    path: '/config/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///config/extensions/extensions.json',
+    _fsPath: '/config/extensions/extensions.json'
+  },
+  productVersion: { version: '1.105.1', date: '2025-10-17T22:37:44.991Z' }
+}
+[17:32:04] Extracted extension to file:///config/extensions/ms-vscode.theme-markdownkit-0.1.4-universal: ms-vscode.theme-markdownkit
+[17:32:04] Renamed to /config/extensions/ms-vscode.theme-markdownkit-0.1.4-universal
+[17:32:04] Extension installed successfully: ms-vscode.theme-markdownkit file:///config/extensions/extensions.json
+[17:32:20] Getting Manifest... creevekcz.idx-xcode
+[17:32:26] Installing extension: creevekcz.idx-xcode {
+  isMachineScoped: false,
+  installPreReleaseVersion: false,
+  pinned: false,
+  isApplicationScoped: false,
+  profileLocation: Vn {
+    scheme: 'file',
+    authority: '',
+    path: '/config/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///config/extensions/extensions.json',
+    _fsPath: '/config/extensions/extensions.json'
+  },
+  productVersion: { version: '1.105.1', date: '2025-10-17T22:37:44.991Z' }
+}
+[17:32:35] Extracted extension to file:///config/extensions/creevekcz.idx-xcode-0.0.4-universal: creevekcz.idx-xcode
+[17:32:35] Renamed to /config/extensions/creevekcz.idx-xcode-0.0.4-universal
+[17:32:35] Extension installed successfully: creevekcz.idx-xcode file:///config/extensions/extensions.json
+[17:33:10] Getting Manifest... daniel-duc.daniel-material-palenight-theme
+[17:33:11] Installing extension: daniel-duc.daniel-material-palenight-theme {
+  isMachineScoped: false,
+  installPreReleaseVersion: false,
+  pinned: false,
+  isApplicationScoped: false,
+  profileLocation: Vn {
+    scheme: 'file',
+    authority: '',
+    path: '/config/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///config/extensions/extensions.json',
+    _fsPath: '/config/extensions/extensions.json'
+  },
+  productVersion: { version: '1.105.1', date: '2025-10-17T22:37:44.991Z' }
+}
+[17:33:12] Extracted extension to file:///config/extensions/daniel-duc.daniel-material-palenight-theme-1.3.0-universal: daniel-duc.daniel-material-palenight-theme
+[17:33:12] Renamed to /config/extensions/daniel-duc.daniel-material-palenight-theme-1.3.0-universal
+[17:33:12] Extension installed successfully: daniel-duc.daniel-material-palenight-theme file:///config/extensions/extensions.json
+[2026-06-26T12:07:06.487Z] info  code-server 4.105.1 811ec6c1d60add2eb92446161ca812828fdbaa7f
+[2026-06-26T12:07:06.488Z] info  Using user-data-dir /config/data
+[2026-06-26T12:07:06.509Z] info  Using config file /config/.config/code-server/config.yaml
+[2026-06-26T12:07:06.510Z] info  HTTP server listening on http://0.0.0.0:8443/
+[2026-06-26T12:07:06.510Z] info    - Authentication is enabled
+[2026-06-26T12:07:06.510Z] info      - Using password from $PASSWORD
+[2026-06-26T12:07:06.510Z] info    - Not serving HTTPS
+[2026-06-26T12:07:06.510Z] info  Session server listening on /config/data/code-server-ipc.sock
+[17:37:09] 
+
+
+
+
+[17:37:09] Extension host agent started.
+[17:37:09] Marked extension as removed zhuangtongfa.material-theme-3.19.0-universal
+[17:37:09] Deleted marked for removal extension from disk zhuangtongfa.material-theme /config/extensions/zhuangtongfa.material-theme-3.19.0-universal
+[17:37:17] [192.168.1.9][74c2eb68][ManagementConnection] New connection established.
+[17:37:21] [192.168.1.9][2a9c0311][ExtensionHostConnection] New connection established.
+[17:37:21] [192.168.1.9][2a9c0311][ExtensionHostConnection] <718> Launched Extension Host Process.

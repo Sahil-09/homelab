@@ -1,0 +1,52 @@
+{
+	"name": "daniel-material-palenight-theme",
+	"displayName": "Material Palenight Theme",
+	"description": "Material Palenight Theme",
+	"publisher": "daniel-duc",
+	"author": "Daniel Duc",
+	"version": "1.3.0",
+	"icon": "media/icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/binhduc1211/daniel-material-palenight-theme"
+	},
+	"bugs": {
+		"url": "https://github.com/binhduc1211/daniel-material-palenight-theme/issues"
+	},
+	"engines": {
+		"vscode": "^1.43.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"Vscode",
+		"Theme",
+		"theme",
+		"material",
+		"dark",
+		"palenight",
+		"Palenight",
+		"protanopia",
+		"colorblind",
+		"react",
+		"nextjs",
+		"tailwind",
+		"vue"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Material Palenight Theme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/daniel-material-palenight-theme-color-theme.json"
+			}
+		]
+	},
+	"license": "MIT",
+	"__metadata": {
+		"installedTimestamp": 1782475392083,
+		"targetPlatform": "universal",
+		"size": 37902
+	}
+}

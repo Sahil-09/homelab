@@ -1,0 +1,11 @@
+Failed login attempt {"remoteAddress":"192.168.1.9","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36","timestamp":1782474954}
+Failed login attempt {"remoteAddress":"192.168.1.9","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36","timestamp":1782474968}
+File not found: /app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm
+File not found: /app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda.js
+a socket was left hanging
+a socket was left hanging
+[17:37:09] [192.168.1.9][53aee3f8][ManagementConnection] Unknown reconnection token (never seen).
+File not found: /app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm
+File not found: /app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda.js
+a socket was left hanging
+a socket was left hanging
