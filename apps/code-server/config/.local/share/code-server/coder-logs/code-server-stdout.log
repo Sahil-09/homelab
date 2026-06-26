@@ -195,3 +195,189 @@
 [17:37:17] [192.168.1.9][74c2eb68][ManagementConnection] New connection established.
 [17:37:21] [192.168.1.9][2a9c0311][ExtensionHostConnection] New connection established.
 [17:37:21] [192.168.1.9][2a9c0311][ExtensionHostConnection] <718> Launched Extension Host Process.
+[2026-06-26T14:08:16.191Z] info  code-server 4.105.1 811ec6c1d60add2eb92446161ca812828fdbaa7f
+[2026-06-26T14:08:16.192Z] info  Using user-data-dir /config/data
+[2026-06-26T14:08:16.214Z] info  Using config file /config/.config/code-server/config.yaml
+[2026-06-26T14:08:16.214Z] info  HTTP server listening on http://0.0.0.0:8443/
+[2026-06-26T14:08:16.214Z] info    - Authentication is enabled
+[2026-06-26T14:08:16.214Z] info      - Using password from $PASSWORD
+[2026-06-26T14:08:16.214Z] info    - Not serving HTTPS
+[2026-06-26T14:08:16.214Z] info  Session server listening on /config/data/code-server-ipc.sock
+[19:38:18] 
+
+
+
+
+[19:38:18] Extension host agent started.
+[19:39:14] [192.168.1.9][bb313148][ManagementConnection] New connection established.
+[19:39:16] [192.168.1.9][736d06e5][ExtensionHostConnection] New connection established.
+[19:39:17] [192.168.1.9][736d06e5][ExtensionHostConnection] <690> Launched Extension Host Process.
+[20:13:27] [172.19.0.2][aac39249][ManagementConnection] New connection established.
+[20:13:30] [172.19.0.2][e71d3353][ExtensionHostConnection] New connection established.
+[20:13:30] [172.19.0.2][e71d3353][ExtensionHostConnection] <8358> Launched Extension Host Process.
+[20:15:45] [172.19.0.2][aac39249][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[20:16:22] [172.19.0.2][aac39249][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[20:16:22] [172.19.0.2][e71d3353][ExtensionHostConnection] The client has reconnected.
+[20:16:23] [172.19.0.2][aac39249][ManagementConnection] The client has reconnected.
+[20:27:35] [172.19.0.2][aac39249][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2026-06-26T14:58:15.375Z] info  code-server 4.105.1 811ec6c1d60add2eb92446161ca812828fdbaa7f
+[2026-06-26T14:58:15.377Z] info  Using user-data-dir /config/data
+[2026-06-26T14:58:15.398Z] info  Using config file /config/.config/code-server/config.yaml
+[2026-06-26T14:58:15.398Z] info  HTTP server listening on http://0.0.0.0:8443/
+[2026-06-26T14:58:15.398Z] info    - Authentication is enabled
+[2026-06-26T14:58:15.398Z] info      - Using password from $PASSWORD
+[2026-06-26T14:58:15.398Z] info    - Not serving HTTPS
+[2026-06-26T14:58:15.398Z] info  Session server listening on /config/data/code-server-ipc.sock
+[20:28:17] 
+
+
+
+
+[20:28:17] Extension host agent started.
+[20:29:23] [192.168.1.9][52e9887c][ManagementConnection] New connection established.
+[20:29:26] [192.168.1.9][736faa26][ExtensionHostConnection] New connection established.
+[20:29:26] [192.168.1.9][736faa26][ExtensionHostConnection] <752> Launched Extension Host Process.
+[2026-06-26T15:03:21.222Z] info  code-server 4.105.1 811ec6c1d60add2eb92446161ca812828fdbaa7f
+[2026-06-26T15:03:21.223Z] info  Using user-data-dir /config/data
+[2026-06-26T15:03:21.245Z] info  Using config file /config/.config/code-server/config.yaml
+[2026-06-26T15:03:21.245Z] info  HTTP server listening on http://0.0.0.0:8443/
+[2026-06-26T15:03:21.245Z] info    - Authentication is enabled
+[2026-06-26T15:03:21.245Z] info      - Using password from $PASSWORD
+[2026-06-26T15:03:21.245Z] info    - Not serving HTTPS
+[2026-06-26T15:03:21.246Z] info  Session server listening on /config/data/code-server-ipc.sock
+[20:33:29] 
+
+
+
+
+[20:33:30] Extension host agent started.
+[20:34:10] [192.168.1.9][c8203ec2][ManagementConnection] New connection established.
+[20:34:15] [192.168.1.9][1d45809f][ExtensionHostConnection] New connection established.
+[20:34:15] [192.168.1.9][1d45809f][ExtensionHostConnection] <781> Launched Extension Host Process.
+[2026-06-26T15:04:37.939Z] info  code-server 4.105.1 811ec6c1d60add2eb92446161ca812828fdbaa7f
+[2026-06-26T15:04:37.940Z] info  Using user-data-dir /config/data
+[2026-06-26T15:04:37.961Z] info  Using config file /config/.config/code-server/config.yaml
+[2026-06-26T15:04:37.962Z] info  HTTP server listening on http://0.0.0.0:8443/
+[2026-06-26T15:04:37.962Z] info    - Authentication is enabled
+[2026-06-26T15:04:37.962Z] info      - Using password from $PASSWORD
+[2026-06-26T15:04:37.962Z] info    - Not serving HTTPS
+[2026-06-26T15:04:37.962Z] info  Session server listening on /config/data/code-server-ipc.sock
+[20:34:44] 
+
+
+
+
+[20:34:44] Extension host agent started.
+[20:35:18] [172.19.0.3][3f5fc330][ManagementConnection] New connection established.
+[20:35:21] [172.19.0.3][4c7d6325][ExtensionHostConnection] New connection established.
+[20:35:21] [172.19.0.3][4c7d6325][ExtensionHostConnection] <793> Launched Extension Host Process.
+[20:35:43] [192.168.1.9][625c5dfd][ManagementConnection] New connection established.
+[20:35:44] [192.168.1.9][4ba16581][ExtensionHostConnection] New connection established.
+[20:35:44] [192.168.1.9][4ba16581][ExtensionHostConnection] <1297> Launched Extension Host Process.
+[20:36:51] [172.19.0.3][3f5fc330][ManagementConnection] The client has reconnected.
+[20:36:52] [172.19.0.3][4c7d6325][ExtensionHostConnection] The client has reconnected.
+[20:38:51] [172.19.0.3][4c7d6325][ExtensionHostConnection] The client has reconnected.
+[20:38:54] [172.19.0.3][3f5fc330][ManagementConnection] The client has reconnected.
+[20:39:15] [172.19.0.3][3f5fc330][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[20:39:15] [172.19.0.3][4c7d6325][ExtensionHostConnection] <793> Extension Host Process exited with code: 0, signal: null.
+[20:39:17] [172.19.0.3][d3e4ce03][ManagementConnection] New connection established.
+[20:39:20] [172.19.0.3][460e3d1b][ExtensionHostConnection] New connection established.
+[20:39:20] [172.19.0.3][460e3d1b][ExtensionHostConnection] <3276> Launched Extension Host Process.
+[2026-06-26T15:22:59.318Z] info  code-server 4.105.1 811ec6c1d60add2eb92446161ca812828fdbaa7f
+[2026-06-26T15:22:59.320Z] info  Using user-data-dir /config/data
+[2026-06-26T15:22:59.342Z] info  Using config file /config/.config/code-server/config.yaml
+[2026-06-26T15:22:59.342Z] info  HTTP server listening on http://0.0.0.0:8443/
+[2026-06-26T15:22:59.342Z] info    - Authentication is enabled
+[2026-06-26T15:22:59.342Z] info      - Using password from $PASSWORD
+[2026-06-26T15:22:59.342Z] info    - Not serving HTTPS
+[2026-06-26T15:22:59.342Z] info  Session server listening on /config/data/code-server-ipc.sock
+[20:53:04] 
+
+
+
+
+[20:53:04] Extension host agent started.
+[21:02:09] [192.168.1.9][62ce6716][ManagementConnection] New connection established.
+[21:02:10] [192.168.1.9][5db77055][ExtensionHostConnection] New connection established.
+[21:02:10] [192.168.1.9][5db77055][ExtensionHostConnection] <786> Launched Extension Host Process.
+[2026-06-26T16:02:06.660Z] info  code-server 4.105.1 811ec6c1d60add2eb92446161ca812828fdbaa7f
+[2026-06-26T16:02:06.662Z] info  Using user-data-dir /config/data
+[2026-06-26T16:02:06.683Z] info  Using config file /config/.config/code-server/config.yaml
+[2026-06-26T16:02:06.683Z] info  HTTP server listening on http://0.0.0.0:8443/
+[2026-06-26T16:02:06.684Z] info    - Authentication is enabled
+[2026-06-26T16:02:06.684Z] info      - Using password from $PASSWORD
+[2026-06-26T16:02:06.684Z] info    - Not serving HTTPS
+[2026-06-26T16:02:06.684Z] info  Session server listening on /config/data/code-server-ipc.sock
+[21:32:07] 
+
+
+
+
+[21:32:07] Extension host agent started.
+[21:33:01] [192.168.1.9][78f7810d][ManagementConnection] New connection established.
+[21:33:03] [192.168.1.9][055aa469][ExtensionHostConnection] New connection established.
+[21:33:03] [192.168.1.9][055aa469][ExtensionHostConnection] <684> Launched Extension Host Process.
+[21:49:53] [192.168.1.9][78f7810d][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[21:49:53] [192.168.1.9][055aa469][ExtensionHostConnection] <684> Extension Host Process exited with code: 0, signal: null.
+[21:49:55] [192.168.1.9][e9fe0677][ManagementConnection] New connection established.
+[21:49:57] [192.168.1.9][f7aeca4b][ExtensionHostConnection] New connection established.
+[21:49:57] [192.168.1.9][f7aeca4b][ExtensionHostConnection] <4783> Launched Extension Host Process.
+[2026-06-26T17:09:49.503Z] info  code-server 4.105.1 811ec6c1d60add2eb92446161ca812828fdbaa7f
+[2026-06-26T17:09:49.504Z] info  Using user-data-dir /config/data
+[2026-06-26T17:09:49.526Z] info  Using config file /config/.config/code-server/config.yaml
+[2026-06-26T17:09:49.526Z] info  HTTP server listening on http://0.0.0.0:8443/
+[2026-06-26T17:09:49.526Z] info    - Authentication is enabled
+[2026-06-26T17:09:49.526Z] info      - Using password from $PASSWORD
+[2026-06-26T17:09:49.526Z] info    - Not serving HTTPS
+[2026-06-26T17:09:49.527Z] info  Session server listening on /config/data/code-server-ipc.sock
+[22:39:56] 
+
+
+
+
+[22:39:56] Extension host agent started.
+[22:43:11] [192.168.1.9][7c77b3ea][ManagementConnection] New connection established.
+[22:43:13] [192.168.1.9][46162479][ExtensionHostConnection] New connection established.
+[22:43:13] [192.168.1.9][46162479][ExtensionHostConnection] <770> Launched Extension Host Process.
+[2026-06-26T17:17:22.512Z] info  code-server 4.105.1 811ec6c1d60add2eb92446161ca812828fdbaa7f
+[2026-06-26T17:17:22.514Z] info  Using user-data-dir /config/data
+[2026-06-26T17:17:22.536Z] info  Using config file /config/.config/code-server/config.yaml
+[2026-06-26T17:17:22.536Z] info  HTTP server listening on http://0.0.0.0:8443/
+[2026-06-26T17:17:22.536Z] info    - Authentication is enabled
+[2026-06-26T17:17:22.536Z] info      - Using password from $PASSWORD
+[2026-06-26T17:17:22.536Z] info    - Not serving HTTPS
+[2026-06-26T17:17:22.536Z] info  Session server listening on /config/data/code-server-ipc.sock
+[22:47:23] 
+
+
+
+
+[22:47:23] Extension host agent started.
+[23:08:09] [192.168.1.9][6ad0da55][ManagementConnection] New connection established.
+[23:08:11] [192.168.1.9][7e0a0ba7][ExtensionHostConnection] New connection established.
+[23:08:11] [192.168.1.9][7e0a0ba7][ExtensionHostConnection] <939> Launched Extension Host Process.
+[2026-06-26T17:40:45.597Z] info  code-server 4.105.1 811ec6c1d60add2eb92446161ca812828fdbaa7f
+[2026-06-26T17:40:45.599Z] info  Using user-data-dir /config/data
+[2026-06-26T17:40:45.621Z] info  Using config file /config/.config/code-server/config.yaml
+[2026-06-26T17:40:45.621Z] info  HTTP server listening on http://0.0.0.0:8443/
+[2026-06-26T17:40:45.621Z] info    - Authentication is enabled
+[2026-06-26T17:40:45.621Z] info      - Using password from $PASSWORD
+[2026-06-26T17:40:45.621Z] info    - Not serving HTTPS
+[2026-06-26T17:40:45.622Z] info  Session server listening on /config/data/code-server-ipc.sock
+[23:10:47] 
+
+
+
+
+[23:10:47] Extension host agent started.
+[23:12:47] [192.168.1.9][b505d283][ManagementConnection] New connection established.
+[23:12:48] [192.168.1.9][985888c2][ExtensionHostConnection] New connection established.
+[23:12:48] [192.168.1.9][985888c2][ExtensionHostConnection] <750> Launched Extension Host Process.
+[23:14:04] [192.168.1.9][b505d283][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[23:14:04] [192.168.1.9][985888c2][ExtensionHostConnection] <750> Extension Host Process exited with code: 0, signal: null.
+[23:14:06] [192.168.1.9][e8e32dab][ManagementConnection] New connection established.
+[23:14:07] [192.168.1.9][0f201e85][ExtensionHostConnection] New connection established.
+[23:14:07] [192.168.1.9][0f201e85][ExtensionHostConnection] <1532> Launched Extension Host Process.
+[02:03:46] [172.19.0.4][2ad96dbc][ManagementConnection] New connection established.
+[02:03:50] [172.19.0.4][ba1ceb4b][ExtensionHostConnection] New connection established.
+[02:03:50] [172.19.0.4][ba1ceb4b][ExtensionHostConnection] <34703> Launched Extension Host Process.

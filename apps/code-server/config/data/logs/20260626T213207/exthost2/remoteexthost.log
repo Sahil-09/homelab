@@ -1,0 +1,16 @@
+2026-06-26 21:49:58.213 [info] Extension host with pid 4783 started
+2026-06-26 21:49:58.267 [info] Lock '/config/data/User/workspaceStorage/51d7f283/vscode.lock': Lock acquired.
+2026-06-26 21:49:58.413 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-06-26 21:49:58.505 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-06-26 21:49:58.523 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-06-26 21:49:58.524 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-06-26 21:49:58.819 [info] Eager extensions activated
+2026-06-26 21:49:58.819 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-06-26 21:49:58.820 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-06-26 21:49:59.249 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-06-26 21:50:01.248 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2026-06-26 21:50:21.445 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2026-06-26 21:50:26.635 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2026-06-26 21:50:26.636 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2026-06-26 21:50:26.636 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2026-06-26 22:29:58.117 [info] ExtensionService#_doActivateExtension ms-azuretools.vscode-containers, startup: false, activationEvent: 'onLanguage:dockercompose'

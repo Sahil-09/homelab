@@ -1,0 +1,16 @@
+2026-06-26 20:35:45.875 [info] Extension host with pid 1297 started
+2026-06-26 20:35:45.875 [error] Error: EEXIST: file already exists, open '/config/data/User/workspaceStorage/51d7f283/vscode.lock'
+2026-06-26 20:35:45.876 [info] Lock '/config/data/User/workspaceStorage/51d7f283/vscode.lock': Could not acquire lock, checking if the file is stale.
+2026-06-26 20:35:45.877 [info] Lock '/config/data/User/workspaceStorage/51d7f283/vscode.lock': The pid 781 appears to be gone.
+2026-06-26 20:35:45.878 [info] Lock '/config/data/User/workspaceStorage/51d7f283/vscode.lock': Deleting a stale lock.
+2026-06-26 20:35:45.916 [info] Lock '/config/data/User/workspaceStorage/51d7f283/vscode.lock': Lock acquired.
+2026-06-26 20:35:46.221 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-06-26 20:35:46.224 [info] ExtensionService#_doActivateExtension ms-azuretools.vscode-containers, startup: false, activationEvent: 'onLanguage:dockercompose'
+2026-06-26 20:35:46.734 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2026-06-26 20:35:47.037 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-06-26 20:35:47.278 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-06-26 20:35:47.279 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-06-26 20:35:47.826 [info] Eager extensions activated
+2026-06-26 20:35:47.827 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-06-26 20:35:47.828 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-06-26 20:35:48.210 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'

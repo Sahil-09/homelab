@@ -1,0 +1,37 @@
+2026-06-26 20:34:18.531 [info] [main] Log level: Info
+2026-06-26 20:34:18.531 [info] [main] Validating found git in: "git"
+2026-06-26 20:34:18.531 [info] [main] Using git "2.43.0" from "git"
+2026-06-26 20:34:18.531 [info] [Model][doInitialScan] Initial repository scan started
+2026-06-26 20:34:18.531 [info] > git rev-parse --show-toplevel [18ms]
+2026-06-26 20:34:18.531 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [5ms]
+2026-06-26 20:34:18.531 [info] [Model][openRepository] Opened repository (path): /home/kraddy/homelab
+2026-06-26 20:34:18.531 [info] [Model][openRepository] Opened repository (real path): /home/kraddy/homelab
+2026-06-26 20:34:18.531 [info] [Model][openRepository] Opened repository (kind): repository
+2026-06-26 20:34:18.531 [info] > git config --get commit.template [9ms]
+2026-06-26 20:34:18.531 [info] > git rev-parse --show-toplevel [9ms]
+2026-06-26 20:34:18.531 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2026-06-26 20:34:18.532 [info] > git rev-parse --show-toplevel [4ms]
+2026-06-26 20:34:18.555 [info] > git status -z -uall [11ms]
+2026-06-26 20:34:18.557 [info] > git rev-parse --show-toplevel [20ms]
+2026-06-26 20:34:18.560 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2026-06-26 20:34:18.571 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [20ms]
+2026-06-26 20:34:18.638 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [31ms]
+2026-06-26 20:34:18.646 [info] > git config --get commit.template [8ms]
+2026-06-26 20:34:18.690 [info] > git config --get --local branch.master.vscode-merge-base [46ms]
+2026-06-26 20:34:18.690 [warning] [Git][config] git config failed: Failed to execute git
+2026-06-26 20:34:18.705 [info] > git reflog master --grep-reflog=branch: Created from *. [9ms]
+2026-06-26 20:34:18.711 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2026-06-26 20:34:18.716 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [6ms]
+2026-06-26 20:34:18.716 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2026-06-26 20:34:18.716 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2026-06-26 20:34:18.736 [info] > git merge-base refs/heads/master refs/remotes/origin/master [13ms]
+2026-06-26 20:34:18.743 [info] > git status -z -uall [14ms]
+2026-06-26 20:34:18.743 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [9ms]
+2026-06-26 20:34:18.756 [info] > git merge-base refs/heads/master refs/remotes/origin/master [3ms]
+2026-06-26 20:34:18.761 [info] > git diff --name-status -z --diff-filter=ADMR af56fc5fa72047d9dd5348df51ce47913cef5f54...refs/remotes/origin/master [20ms]
+2026-06-26 20:34:18.764 [info] > git diff --name-status -z --diff-filter=ADMR af56fc5fa72047d9dd5348df51ce47913cef5f54...refs/remotes/origin/master [3ms]
+2026-06-26 20:34:18.949 [info] > git show --textconv :apps/code-server/docker-compose.yml [6ms]
+2026-06-26 20:34:18.951 [info] > git ls-files --stage -- apps/code-server/docker-compose.yml [3ms]
+2026-06-26 20:34:18.958 [info] > git cat-file -s 85d5b480d45af3cf6071d676193d78b5ac1cf59d [2ms]
+2026-06-26 20:34:19.089 [info] > git blame --root --incremental af56fc5fa72047d9dd5348df51ce47913cef5f54 -- apps/code-server/docker-compose.yml [4ms]
+2026-06-26 20:34:19.223 [info] > git check-ignore -v -z --stdin [3ms]

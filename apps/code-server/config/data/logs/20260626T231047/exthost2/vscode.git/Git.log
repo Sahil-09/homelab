@@ -1,0 +1,55 @@
+2026-06-26 23:14:11.855 [info] [main] Log level: Info
+2026-06-26 23:14:11.856 [info] [main] Validating found git in: "git"
+2026-06-26 23:14:11.856 [info] [main] Using git "2.43.0" from "git"
+2026-06-26 23:14:11.856 [info] [Model][doInitialScan] Initial repository scan started
+2026-06-26 23:14:11.856 [info] > git rev-parse --show-toplevel [3ms]
+2026-06-26 23:14:11.856 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [4ms]
+2026-06-26 23:14:11.856 [info] [Model][openRepository] Opened repository (path): /home/kraddy/homelab
+2026-06-26 23:14:11.856 [info] [Model][openRepository] Opened repository (real path): /home/kraddy/homelab
+2026-06-26 23:14:11.856 [info] [Model][openRepository] Opened repository (kind): repository
+2026-06-26 23:14:11.856 [info] > git config --get commit.template [7ms]
+2026-06-26 23:14:11.856 [info] > git rev-parse --show-toplevel [4ms]
+2026-06-26 23:14:11.856 [info] > git rev-parse --show-toplevel [3ms]
+2026-06-26 23:14:11.856 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2026-06-26 23:14:11.856 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [16ms]
+2026-06-26 23:14:11.859 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [8ms]
+2026-06-26 23:14:11.878 [info] > git status -z -uall [39ms]
+2026-06-26 23:14:11.930 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2026-06-26 23:14:11.938 [info] > git config --get commit.template [9ms]
+2026-06-26 23:14:11.939 [info] > git config --get --local branch.master.vscode-merge-base [4ms]
+2026-06-26 23:14:11.940 [warning] [Git][config] git config failed: Failed to execute git
+2026-06-26 23:14:11.950 [info] > git reflog master --grep-reflog=branch: Created from *. [6ms]
+2026-06-26 23:14:11.955 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [7ms]
+2026-06-26 23:14:11.956 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [2ms]
+2026-06-26 23:14:11.956 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2026-06-26 23:14:11.957 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2026-06-26 23:14:11.967 [info] > git merge-base refs/heads/master refs/remotes/origin/master [5ms]
+2026-06-26 23:14:11.985 [info] > git status -z -uall [9ms]
+2026-06-26 23:14:11.985 [info] > git diff --name-status -z --diff-filter=ADMR af56fc5fa72047d9dd5348df51ce47913cef5f54...refs/remotes/origin/master [14ms]
+2026-06-26 23:14:12.059 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [79ms]
+2026-06-26 23:14:12.291 [info] > git show --textconv :.env [6ms]
+2026-06-26 23:14:12.296 [info] > git ls-files --stage -- .env [6ms]
+2026-06-26 23:14:12.302 [info] > git hash-object -t tree /dev/null [7ms]
+2026-06-26 23:14:12.303 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/kraddy/homelab/.env.git?%7B%22path%22%3A%22%2Fhome%2Fkraddy%2Fhomelab%2F.env%22%2C%22ref%22%3A%22%22%7D
+2026-06-26 23:14:12.304 [info] > git hash-object -t tree /dev/null [4ms]
+2026-06-26 23:14:12.304 [warning] [GitFileSystemProvider][stat] File not found - git:/home/kraddy/homelab/.env.git?%7B%22path%22%3A%22%2Fhome%2Fkraddy%2Fhomelab%2F.env%22%2C%22ref%22%3A%22%22%7D
+2026-06-26 23:14:12.338 [info] > git check-ignore -v -z --stdin [2ms]
+2026-06-26 23:14:12.350 [info] > git blame --root --incremental af56fc5fa72047d9dd5348df51ce47913cef5f54 -- .env [3ms]
+2026-06-26 23:14:12.350 [info] fatal: no such path .env in af56fc5fa72047d9dd5348df51ce47913cef5f54
+2026-06-26 23:14:16.104 [info] > git check-ignore -v -z --stdin [24ms]
+2026-06-26 23:14:16.362 [info] > git show --textconv :apps/code-server/docker-compose.yml [6ms]
+2026-06-26 23:14:16.369 [info] > git ls-files --stage -- apps/code-server/docker-compose.yml [9ms]
+2026-06-26 23:14:16.375 [info] > git cat-file -s 85d5b480d45af3cf6071d676193d78b5ac1cf59d [2ms]
+2026-06-26 23:14:16.418 [info] > git blame --root --incremental af56fc5fa72047d9dd5348df51ce47913cef5f54 -- apps/code-server/docker-compose.yml [19ms]
+2026-06-26 23:14:19.173 [info] > git config --get commit.template [2ms]
+2026-06-26 23:14:19.185 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
+2026-06-26 23:14:19.196 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2026-06-26 23:14:19.198 [info] > git status -z -uall [9ms]
+2026-06-26 23:14:24.221 [info] > git config --get commit.template [7ms]
+2026-06-26 23:14:24.222 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2026-06-26 23:14:24.234 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2026-06-26 23:14:24.239 [info] > git status -z -uall [13ms]
+2026-06-26 23:16:00.551 [info] > git config --get commit.template [7ms]
+2026-06-26 23:16:00.552 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2026-06-26 23:16:00.566 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2026-06-26 23:16:00.570 [info] > git status -z -uall [13ms]
