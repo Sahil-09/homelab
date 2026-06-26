@@ -75,3 +75,12 @@ File not found: /app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda_bg.w
 File not found: /app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda.js
 File not found: /app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm
 File not found: /app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda.js
+a socket was left hanging
+a socket was left hanging
+a socket was left hanging
+a socket was left hanging
+a socket was left hanging
+[02:33:01] [192.168.1.9][e8e32dab][ManagementConnection] Unknown reconnection token (never seen).
+[02:33:30] [172.19.0.4][2ad96dbc][ManagementConnection] Unknown reconnection token (never seen).
+[02:33:32] [172.19.0.4][ba1ceb4b][ExtensionHostConnection] Unknown reconnection token (never seen).
+File not found: /app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm

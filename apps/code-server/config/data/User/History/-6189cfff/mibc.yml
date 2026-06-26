@@ -1,6 +1,6 @@
 services:
   code-server:
-    build: .
+    build: lscr.io/linuxserver/code-server:4.105.1
     container_name: code-server
 
     restart: unless-stopped

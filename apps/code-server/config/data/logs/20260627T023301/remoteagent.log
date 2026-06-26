@@ -1,0 +1,12 @@
+2026-06-27 02:33:01.567 [info] 
+
+
+
+
+2026-06-27 02:33:01.604 [info] Extension host agent started.
+2026-06-27 02:33:01.686 [error] [192.168.1.9][e8e32dab][ManagementConnection] Unknown reconnection token (never seen).
+2026-06-27 02:33:30.741 [error] [172.19.0.4][2ad96dbc][ManagementConnection] Unknown reconnection token (never seen).
+2026-06-27 02:33:32.778 [error] [172.19.0.4][ba1ceb4b][ExtensionHostConnection] Unknown reconnection token (never seen).
+2026-06-27 02:35:26.381 [info] [172.19.0.4][e536a3cf][ManagementConnection] New connection established.
+2026-06-27 02:35:29.096 [info] [172.19.0.4][54902ad3][ExtensionHostConnection] New connection established.
+2026-06-27 02:35:29.297 [info] [172.19.0.4][54902ad3][ExtensionHostConnection] <810> Launched Extension Host Process.

@@ -381,3 +381,20 @@
 [02:03:46] [172.19.0.4][2ad96dbc][ManagementConnection] New connection established.
 [02:03:50] [172.19.0.4][ba1ceb4b][ExtensionHostConnection] New connection established.
 [02:03:50] [172.19.0.4][ba1ceb4b][ExtensionHostConnection] <34703> Launched Extension Host Process.
+[2026-06-26T21:02:56.844Z] info  code-server 4.105.1 811ec6c1d60add2eb92446161ca812828fdbaa7f
+[2026-06-26T21:02:56.847Z] info  Using user-data-dir /config/data
+[2026-06-26T21:02:56.887Z] info  Using config file /config/.config/code-server/config.yaml
+[2026-06-26T21:02:56.888Z] info  HTTP server listening on http://0.0.0.0:8443/
+[2026-06-26T21:02:56.888Z] info    - Authentication is enabled
+[2026-06-26T21:02:56.888Z] info      - Using password from $PASSWORD
+[2026-06-26T21:02:56.888Z] info    - Not serving HTTPS
+[2026-06-26T21:02:56.888Z] info  Session server listening on /config/data/code-server-ipc.sock
+[02:33:01] 
+
+
+
+
+[02:33:01] Extension host agent started.
+[02:35:26] [172.19.0.4][e536a3cf][ManagementConnection] New connection established.
+[02:35:29] [172.19.0.4][54902ad3][ExtensionHostConnection] New connection established.
+[02:35:29] [172.19.0.4][54902ad3][ExtensionHostConnection] <810> Launched Extension Host Process.
