@@ -446,3 +446,18 @@
 [02:53:36] [172.19.0.4][2c1b2539][ManagementConnection] New connection established.
 [02:53:39] [172.19.0.4][a43e8ee1][ExtensionHostConnection] New connection established.
 [02:53:39] [172.19.0.4][a43e8ee1][ExtensionHostConnection] <1139> Launched Extension Host Process.
+[03:17:08] [172.19.0.4][2c1b2539][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[03:17:08] [172.19.0.4][a43e8ee1][ExtensionHostConnection] <1139> Extension Host Process exited with code: 0, signal: null.
+[11:26:56] [172.19.0.4][250b150b][ManagementConnection] New connection established.
+[11:27:00] [172.19.0.4][5dc5079d][ExtensionHostConnection] New connection established.
+[11:27:00] [172.19.0.4][5dc5079d][ExtensionHostConnection] <12439> Launched Extension Host Process.
+[11:27:12] [172.19.0.4][250b150b][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[11:27:12] [172.19.0.4][5dc5079d][ExtensionHostConnection] <12439> Extension Host Process exited with code: 0, signal: null.
+[11:27:14] [172.19.0.4][42fad3ee][ManagementConnection] New connection established.
+[11:27:18] [172.19.0.4][468e99a9][ExtensionHostConnection] New connection established.
+[11:27:18] [172.19.0.4][468e99a9][ExtensionHostConnection] <12956> Launched Extension Host Process.
+[11:30:27] [172.19.0.4][42fad3ee][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[11:30:27] [172.19.0.4][468e99a9][ExtensionHostConnection] <12956> Extension Host Process exited with code: 0, signal: null.
+[11:30:30] [172.19.0.4][3733153a][ManagementConnection] New connection established.
+[11:30:33] [172.19.0.4][b2b823c7][ExtensionHostConnection] New connection established.
+[11:30:33] [172.19.0.4][b2b823c7][ExtensionHostConnection] <14119> Launched Extension Host Process.
