@@ -18,10 +18,10 @@ Build a self-hosted development and automation platform on an old laptop that pr
 ## Hardware
 
 * Host: Old Laptop
-* RAM: 8GB
-* Storage: 1 TB
+* RAM: TBD
+* Storage: TBD
 * Network: Airtel Xstream Fiber
-* Static LAN IP: 192.168.1.50
+* Static LAN IP: 192.168.1.4
 
 ## Operating System
 

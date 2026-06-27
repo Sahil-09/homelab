@@ -16,3 +16,9 @@ git config --global user.name "Sahil"
 git config --global user.email "patelsahil9732@gmail.com"
 nvm list
 node -v
+nvm list
+opencode
+git push origin
+opencode
+sudo opencode
+nvm list
