@@ -1,0 +1,25 @@
+- greeting:
+    text_size: xl
+    text: "HomeLab Dashboard"
+
+- logo:
+    icon: mdi-server
+
+- datetime:
+    text_size: l
+    format:
+      dateStyle: long
+      timeStyle: short
+
+- resources:
+    cpu: true
+    memory: true
+    cputemp: true
+    uptime: true
+    units: imperial
+    refresh: 1000
+
+- search:
+    provider: duckduckgo
+    target: _blank
+    url: https://duckduckgo.com

@@ -1,0 +1,83 @@
+services:
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+
+    restart: unless-stopped
+
+    volumes:
+      - ./config:/etc/prometheus:ro
+      - prometheus_data:/prometheus
+
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/usr/share/prometheus/console_libraries'
+      - '--web.console.templates=/usr/share/prometheus/consoles'
+      - '--web.enable-lifecycle'
+
+    networks:
+      - proxy
+      - monitoring
+
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.prometheus.rule=Host(`prometheus.patelsahil.in`)
+      - traefik.http.routers.prometheus.entrypoints=websecure
+      - traefik.http.routers.prometheus.tls=true
+      - traefik.http.routers.prometheus.middlewares=secure-headers@file
+      - traefik.http.services.prometheus.loadbalancer.server.port=9090
+
+    security_opt:
+      - no-new-privileges:true
+
+  node-exporter:
+    image: prom/node-exporter:latest
+    container_name: node-exporter
+
+    restart: unless-stopped
+
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+
+    command:
+      - '--path.procfs=/host/proc'
+      - '--path.sysfs=/host/sys'
+      - '--path.rootfs=/rootfs'
+      - '--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)'
+
+    networks:
+      - monitoring
+
+    security_opt:
+      - no-new-privileges:true
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:latest
+    container_name: cadvisor
+
+    restart: unless-stopped
+
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /cgroup:/cgroup:ro
+
+    networks:
+      - monitoring
+
+    security_opt:
+      - no-new-privileges:true
+
+networks:
+  proxy:
+    external: true
+  monitoring:
+    driver: bridge
+
+volumes:
+  prometheus_data:

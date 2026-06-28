@@ -25,7 +25,7 @@ Build a self-hosted development and automation platform on an old laptop that pr
 
 ## Operating System
 
-* Linux Mint
+* Ubuntu Live Server
 * Docker Engine
 * Docker Compose
 
@@ -77,7 +77,6 @@ grafana.patelsahil.in
 
 ```text
 code.patelsahil.in
-gitea.patelsahil.in
 registry.patelsahil.in
 ```
 
@@ -123,7 +122,6 @@ openwebui.patelsahil.in
 ├── services
 │   ├── code-server
 │   ├── portainer
-│   ├── gitea
 │   ├── nextcloud
 │   ├── immich
 │   ├── n8n
@@ -192,7 +190,7 @@ Status:
 * [x] Installed
 * [x] Docker Provider
 * [x] Cloudflare Integration
-* [ ] Dashboard Route
+* [x] Dashboard Route
 
 ---
 
@@ -208,7 +206,7 @@ Status:
 * [x] Installed
 * [x] Tunnel Created
 * [x] Wildcard Route Configured
-* [ ] Final Validation
+* [x] Final Validation
 
 ---
 
@@ -221,7 +219,7 @@ Purpose:
 Status:
 
 * [x] Installed
-* [ ] Traefik Route Validation
+* [x] Traefik Route Validation
 
 ---
 
@@ -235,10 +233,10 @@ Status:
 
 * [x] Installed
 * [x] GitHub Login
-* [ ] NodeJS
-* [ ] pnpm
-* [ ] Nest CLI
-* [ ] Angular CLI
+* [x] NodeJS
+* [x] pnpm
+* [x] Nest CLI
+* [x] Angular CLI
 
 ---
 
@@ -258,7 +256,7 @@ HIGH
 
 Status:
 
-* [ ] Pending
+* [x] Installed
 
 ---
 
@@ -270,7 +268,7 @@ Purpose:
 
 Status:
 
-* [ ] Pending
+* [x] Installed
 
 ---
 
@@ -285,7 +283,7 @@ Purpose:
 
 Status:
 
-* [ ] Pending
+* [x] Installed
 
 ---
 
@@ -297,7 +295,7 @@ Purpose:
 
 Status:
 
-* [ ] Pending
+* [x] Installed
 
 ---
 
@@ -310,7 +308,7 @@ Purpose:
 
 Status:
 
-* [ ] Pending
+* [x] Installed
 
 ---
 
@@ -336,7 +334,7 @@ Purpose:
 
 Status:
 
-* [ ] Pending
+* [x] Installed
 
 ---
 
@@ -383,7 +381,7 @@ HIGH
 
 Status:
 
-* [ ] Pending
+* [x] Installed
 
 ---
 
@@ -418,7 +416,7 @@ HIGH
 
 Status:
 
-* [ ] Pending
+* [x] Installed
 
 ---
 
@@ -432,7 +430,7 @@ Purpose:
 
 Status:
 
-* [ ] Pending
+* [ ] Skipped (Using Free Cloud APIs to save CPU/RAM)
 
 ---
 
@@ -444,7 +442,7 @@ Purpose:
 
 Status:
 
-* [ ] Pending
+* [x] Installed
 
 ---
 
@@ -471,7 +469,6 @@ Protect:
 * Portainer
 * Grafana
 * Code Server
-* Gitea
 
 Status:
 
@@ -500,7 +497,6 @@ Status:
 ## Daily
 
 * PostgreSQL Dump
-* Gitea Backup
 * n8n Backup
 
 ## Weekly
@@ -543,16 +539,20 @@ Destination:
 
 # Immediate Next Tasks
 
-1. Fix Portainer Traefik Routing
-2. Validate Wildcard Tunnel
-3. Install NodeJS via NVM
-4. Install pnpm
-5. Install Homepage Dashboard
-6. Install Uptime Kuma
-7. Install Prometheus
-8. Install Grafana
-9. Install Gitea
-10. Install n8n
+1. [x] Fix Portainer Traefik Routing
+2. [x] Validate Wildcard Tunnel
+3. [x] Install NodeJS via NVM
+4. [x] Install pnpm
+5. [x] Install Homepage Dashboard
+6. [x] Install Uptime Kuma
+7. [x] Install Prometheus
+8. [x] Install Grafana
+9. [x] Install n8n
+10. [x] Install Nextcloud
+11. [ ] Configure Grafana System Alerting
+12. [ ] Install Wiki.js (Documentation)
+13. [ ] Install Loki (Centralized Logs)
+14. [ ] Install Immich (Photo Backup)
 
 Target Outcome:
 

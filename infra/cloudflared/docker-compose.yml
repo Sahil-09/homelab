@@ -14,6 +14,10 @@ services:
       - TUNNEL_TOKEN=${TUNNEL_TOKEN}
       - TZ=${TZ}
 
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
+
     networks:
       - proxy
 

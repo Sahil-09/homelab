@@ -3,5 +3,6 @@
     "window.menuBarVisibility": "classic",
     "terminal.integrated.allowChords": false,
     "explorer.confirmDragAndDrop": false,
-    "git.enableSmartCommit": true
+    "git.enableSmartCommit": true,
+    "workbench.editor.enablePreview": false
 }

@@ -1,0 +1,44 @@
+services:
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: open-webui
+
+    restart: unless-stopped
+
+    environment:
+      - OPENAI_API_BASE_URL=https://api.groq.com/openai/v1
+      - OPENAI_API_KEY=${GROQ_API_KEY}
+      - WEBUI_SECRET_KEY=webui_secure_secret_9732
+      - ENABLE_OLLAMA_API=False
+      - TZ=${TZ}
+
+    volumes:
+      - open-webui_data:/app/backend/data
+
+    networks:
+      - proxy
+
+    healthcheck:
+      disable: true
+
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
+
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.open-webui.rule=Host(`ai.patelsahil.in`)
+      - traefik.http.routers.open-webui.entrypoints=websecure
+      - traefik.http.routers.open-webui.tls=true
+      - traefik.http.routers.open-webui.middlewares=secure-headers@file,compress@file
+      - traefik.http.services.open-webui.loadbalancer.server.port=8080
+
+    security_opt:
+      - no-new-privileges:true
+
+networks:
+  proxy:
+    external: true
+
+volumes:
+  open-webui_data:

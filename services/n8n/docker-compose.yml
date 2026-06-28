@@ -1,0 +1,53 @@
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: n8n
+    user: root
+
+    restart: unless-stopped
+
+    environment:
+      - TZ=${TZ}
+      - N8N_HOST=n8n.patelsahil.in
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=https
+      - WEBHOOK_URL=https://n8n.patelsahil.in/
+      - DB_TYPE=postgresdb
+      - DB_POSTGRESDB_HOST=postgres
+      - DB_POSTGRESDB_PORT=5432
+      - DB_POSTGRESDB_DATABASE=${N8N_DB_NAME}
+      - DB_POSTGRESDB_USER=${N8N_DB_USER}
+      - DB_POSTGRESDB_PASSWORD=${N8N_DB_PASSWORD}
+      - N8N_ENCRYPTION_KEY=n8n_secure_encryption_key_9732
+      - N8N_NODES_EXCLUDE=[]
+      - NODES_EXCLUDE=[]
+
+    volumes:
+      - n8n_data:/home/node/.n8n
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/bin/docker:/usr/bin/docker:ro
+
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
+
+    networks:
+      - proxy
+
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.n8n.rule=Host(`n8n.patelsahil.in`)
+      - traefik.http.routers.n8n.entrypoints=websecure
+      - traefik.http.routers.n8n.tls=true
+      - traefik.http.routers.n8n.middlewares=secure-headers@file,compress@file
+      - traefik.http.services.n8n.loadbalancer.server.port=5678
+
+    security_opt:
+      - no-new-privileges:true
+
+networks:
+  proxy:
+    external: true
+
+volumes:
+  n8n_data:

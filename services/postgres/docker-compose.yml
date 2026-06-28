@@ -1,0 +1,32 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: postgres
+
+    restart: unless-stopped
+
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - N8N_DB_USER=${N8N_DB_USER}
+      - N8N_DB_PASSWORD=${N8N_DB_PASSWORD}
+      - N8N_DB_NAME=${N8N_DB_NAME}
+      - NEXTCLOUD_DB_USER=${NEXTCLOUD_DB_USER}
+      - NEXTCLOUD_DB_PASSWORD=${NEXTCLOUD_DB_PASSWORD}
+      - NEXTCLOUD_DB_NAME=${NEXTCLOUD_DB_NAME}
+      - TZ=${TZ}
+
+    volumes:
+      - /home/kraddy/homelab/data/postgres:/var/lib/postgresql/data
+      - ./init-user-db.sh:/docker-entrypoint-initdb.d/init-user-db.sh:ro
+
+    networks:
+      - proxy
+
+    security_opt:
+      - no-new-privileges:true
+
+networks:
+  proxy:
+    external: true

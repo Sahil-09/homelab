@@ -1,0 +1,34 @@
+title: HomeLab Dashboard
+favicon: https://patelsahil.in/favicon.ico
+
+theme: dark
+color: slate
+
+headerStyle: boxed
+
+layout:
+  Infrastructure:
+    style: row
+    columns: 4
+  Development:
+    style: row
+    columns: 3
+  Monitoring:
+    style: row
+    columns: 4
+  Productivity:
+    style: row
+    columns: 2
+  Media:
+    style: row
+    columns: 1
+
+quicklaunch:
+  searchDescriptions: true
+  hideInternetSearch: false
+  hideVisitURL: false
+
+proxy:
+  useCredentials: false
+
+showStats: true

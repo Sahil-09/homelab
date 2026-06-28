@@ -22,3 +22,27 @@ git push origin
 opencode
 sudo opencode
 nvm list
+opencode --v
+git push origin
+sudo apt update
+apt update
+sudo apt update
+hostcmd hostname
+host-cmd hostname
+host-cmd nvm list
+host-cmd nvm 
+host-cmd node -v
+docker ps
+clear
+nvm list
+hostcmd nvm
+hostcmd nvm list
+hostalias
+hostcmd hostalias
+hostname
+clear
+hostcmd hostname
+ls
+homecmd hostname
+hom-ecmd hostname
+home-cmd hostname

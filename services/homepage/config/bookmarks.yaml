@@ -1,0 +1,26 @@
+- Developer Resources:
+    - GitHub:
+        - abbr: GH
+          href: https://github.com
+          description: Source Control
+
+    - GitHub - Personal:
+        - abbr: GHP
+          href: https://github.com/kraddy
+          description: My Repositories
+
+- Documentation:
+    - Docker Docs:
+        - abbr: DOC
+          href: https://docs.docker.com
+          description: Docker Documentation
+
+    - Traefik Docs:
+        - abbr: TRF
+          href: https://doc.traefik.io/traefik
+          description: Traefik Documentation
+
+    - Homepage Docs:
+        - abbr: HP
+          href: https://gethomepage.dev
+          description: Homepage Documentation

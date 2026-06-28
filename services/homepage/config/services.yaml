@@ -1,0 +1,80 @@
+- Infrastructure:
+    - Portainer:
+        href: https://portainer.patelsahil.in
+        description: Docker Management
+        icon: portainer.png
+        widget:
+          type: portainer
+          url: http://portainer:9000
+          env: 2
+          showContainerCount: true
+
+    - Traefik:
+        href: https://traefik.patelsahil.in
+        description: Reverse Proxy
+        icon: traefik.png
+
+    - Code Server:
+        href: https://code.patelsahil.in
+        description: Remote VS Code
+        icon: vscode.png
+
+    - Homepage:
+        href: https://home.patelsahil.in
+        description: Dashboard
+        icon: homepage.png
+
+- Development:
+    - Docker Registry:
+        href: https://registry.patelsahil.in
+        description: Container Registry
+        icon: docker.png
+
+- Monitoring:
+    - Uptime Kuma:
+        href: https://uptime.patelsahil.in
+        description: Uptime Monitoring
+        icon: uptime-kuma.png
+
+    - Grafana:
+        href: https://grafana.patelsahil.in
+        description: Metrics Dashboard
+        icon: grafana.png
+
+    - Prometheus:
+        href: https://prometheus.patelsahil.in
+        description: Metrics Collection
+        icon: prometheus.png
+
+    - n8n:
+        href: https://n8n.patelsahil.in
+        description: Automation Platform
+        icon: n8n.png
+
+- Productivity:
+    - Nextcloud:
+        href: https://nextcloud.patelsahil.in
+        description: Personal Cloud
+        icon: nextcloud.png
+
+    - Wiki.js:
+        href: https://wiki.patelsahil.in
+        description: Documentation
+        icon: wikijs.png
+
+- Media:
+    - Immich:
+        href: https://immich.patelsahil.in
+        description: Photo Backup
+        icon: immich.png
+
+- AI:
+    - Open WebUI:
+        href: https://openwebui.patelsahil.in
+        description: AI Chat Interface
+        icon: openai.png
+
+    - Ollama:
+        href: https://ollama.patelsahil.in
+        description: Local LLM
+        icon: ollama.png

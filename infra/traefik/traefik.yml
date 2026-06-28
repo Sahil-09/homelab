@@ -5,6 +5,12 @@ global:
 api:
   dashboard: true
 
+metrics:
+  prometheus:
+    addEntryPointsLabels: true
+    addServicesLabels: true
+    addRoutersLabels: true
+
 log:
   level: DEBUG
 
