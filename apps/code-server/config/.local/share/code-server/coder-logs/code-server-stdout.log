@@ -591,3 +591,45 @@
 [12:22:35] [172.19.0.4][d8300fdc][ManagementConnection] New connection established.
 [12:22:38] [172.19.0.4][ca8e1e24][ExtensionHostConnection] New connection established.
 [12:22:38] [172.19.0.4][ca8e1e24][ExtensionHostConnection] <1368> Launched Extension Host Process.
+[21:20:51] [172.19.0.4][d8300fdc][ManagementConnection] The client has reconnected.
+[21:21:11] [172.19.0.4][ca8e1e24][ExtensionHostConnection] The client has reconnected.
+[21:21:12] [172.19.0.4][ca8e1e24][ExtensionHostConnection] The client has reconnected.
+[2026-06-28T16:15:34.126Z] info  code-server 4.105.1 811ec6c1d60add2eb92446161ca812828fdbaa7f
+[2026-06-28T16:15:34.255Z] info  Using user-data-dir /config/data
+[2026-06-28T16:15:34.750Z] info  Using config file /config/.config/code-server/config.yaml
+[2026-06-28T16:15:34.750Z] info  HTTP server listening on http://0.0.0.0:8443/
+[2026-06-28T16:15:34.750Z] info    - Authentication is enabled
+[2026-06-28T16:15:34.750Z] info      - Using password from $PASSWORD
+[2026-06-28T16:15:34.750Z] info    - Not serving HTTPS
+[2026-06-28T16:15:34.751Z] info  Session server listening on /config/data/code-server-ipc.sock
+[21:46:02] 
+
+
+
+
+[21:46:04] Extension host agent started.
+[10:13:14] [172.19.0.14][26ec360b][ManagementConnection] New connection established.
+[10:13:18] [172.19.0.14][36195097][ExtensionHostConnection] New connection established.
+[10:13:20] [172.19.0.14][36195097][ExtensionHostConnection] <10082> Launched Extension Host Process.
+[10:38:58] [172.19.0.14][36195097][ExtensionHostConnection] The client has reconnected.
+[13:04:57] [172.19.0.14][26ec360b][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[13:04:58] [172.19.0.14][36195097][ExtensionHostConnection] <10082> Extension Host Process exited with code: 0, signal: null.
+[18:15:03] [172.19.0.14][0f3dd08f][ManagementConnection] New connection established.
+[18:15:07] [172.19.0.14][8274143b][ExtensionHostConnection] New connection established.
+[18:15:07] [172.19.0.14][8274143b][ExtensionHostConnection] <46816> Launched Extension Host Process.
+[18:20:05] [172.19.0.14][0f3dd08f][ManagementConnection] The client has reconnected.
+[18:20:06] [172.19.0.14][8274143b][ExtensionHostConnection] The client has reconnected.
+[18:45:12] [172.19.0.14][0f3dd08f][ManagementConnection] The client has reconnected.
+[18:45:13] [172.19.0.14][8274143b][ExtensionHostConnection] The client has reconnected.
+[18:49:09] [172.19.0.14][8274143b][ExtensionHostConnection] The client has reconnected.
+[18:49:10] [172.19.0.14][0f3dd08f][ManagementConnection] The client has reconnected.
+[19:05:36] [172.19.0.14][8274143b][ExtensionHostConnection] The client has reconnected.
+[19:05:36] [172.19.0.14][0f3dd08f][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[19:05:43] [172.19.0.14][0f3dd08f][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[19:05:43] [172.19.0.14][0f3dd08f][ManagementConnection] The client has reconnected.
+[19:10:19] [172.19.0.14][8274143b][ExtensionHostConnection] The client has reconnected.
+[19:10:20] [172.19.0.14][0f3dd08f][ManagementConnection] The client has reconnected.
+[19:21:38] [172.19.0.14][0f3dd08f][ManagementConnection] The client has reconnected.
+[19:21:39] [172.19.0.14][8274143b][ExtensionHostConnection] The client has reconnected.
+[19:32:12] [172.19.0.14][8274143b][ExtensionHostConnection] The client has reconnected.
+[19:32:13] [172.19.0.14][0f3dd08f][ManagementConnection] The client has reconnected.

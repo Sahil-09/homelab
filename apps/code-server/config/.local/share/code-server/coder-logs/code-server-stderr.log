@@ -1039,3 +1039,10 @@ File not found: /app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda_bg.w
 [15:47:21] No ptyHost heartbeat after 6 seconds
 [19:50:18] No ptyHost heartbeat after 6 seconds
 [IPC Library: Pty Host] task queue exceeded allotted deadline by 40ms
+[20:59:51] No ptyHost heartbeat after 6 seconds
+[21:46:25] [172.19.0.14][ca8e1e24][ExtensionHostConnection] Unknown reconnection token (never seen).
+[21:46:29] [172.19.0.14][d8300fdc][ManagementConnection] Unknown reconnection token (never seen).
+File not found: /app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm
+File not found: /app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda.js
+File not found: /app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm
+File not found: /app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda.js
