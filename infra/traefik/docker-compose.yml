@@ -32,6 +32,16 @@ services:
     security_opt:
       - no-new-privileges:true
 
+  error-pages:
+    image: tarampampam/error-pages:3.3.0
+    container_name: error-pages
+    restart: unless-stopped
+    environment:
+      TEMPLATE_NAME: ghost
+      SHOW_DETAILS: "true"
+    networks:
+      - proxy
+
 networks:
   proxy:
     external: true

@@ -1,0 +1,23 @@
+http:
+  routers:
+    catch-all:
+      rule: "PathPrefix(`/`)"
+      entryPoints:
+        - "websecure"
+      priority: 1
+      service: error-pages-service
+      tls: {}
+
+  middlewares:
+    error-pages-middleware:
+      errors:
+        status:
+          - "400-599"
+        service: error-pages-service
+        query: "/{status}.html"
+
+  services:
+    error-pages-service:
+      loadBalancer:
+        servers:
+          - url: "http://error-pages:8080"

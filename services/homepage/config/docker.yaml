@@ -1,3 +1,2 @@
-docker:
-  host: docker.sock
-  prefix: null
+my-docker:
+  socket: /var/run/docker.sock

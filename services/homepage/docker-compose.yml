@@ -7,6 +7,7 @@ services:
 
     environment:
       - HOMEPAGE_ALLOWED_HOSTS=home.patelsahil.in
+      - HOMEPAGE_VAR_PORTAINER_TOKEN=${PORTAINER_TOKEN}
 
     volumes:
       - ./config:/app/config

@@ -1,25 +1,29 @@
 title: HomeLab Dashboard
-favicon: https://patelsahil.in/favicon.ico
+favicon: https://raw.githubusercontent.com/gethomepage/homepage/main/public/favicon.ico
+
+background: https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&fit=crop&w=1920&q=80
+
+cardBlur: sm
 
 theme: dark
-color: slate
+color: zinc
 
 headerStyle: boxed
 
 layout:
-  Infrastructure:
-    style: row
-    columns: 4
-  Development:
+  Administration & System:
     style: row
     columns: 3
-  Monitoring:
+  Dev & Automation:
     style: row
-    columns: 4
-  Productivity:
+    columns: 3
+  Monitoring & Telemetry:
     style: row
-    columns: 2
-  Media:
+    columns: 3
+  Personal Cloud & Media:
+    style: row
+    columns: 3
+  AI Tools:
     style: row
     columns: 1
 

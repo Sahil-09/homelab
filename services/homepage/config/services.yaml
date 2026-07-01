@@ -1,80 +1,102 @@
-- Infrastructure:
-    - Portainer:
-        href: https://portainer.patelsahil.in
-        description: Docker Management
-        icon: portainer.png
-        widget:
-          type: portainer
-          url: http://portainer:9000
-          env: 2
-          showContainerCount: true
-
+- Administration & System:
     - Traefik:
         href: https://traefik.patelsahil.in
         description: Reverse Proxy
         icon: traefik.png
+        server: my-docker
+        container: traefik
 
-    - Code Server:
-        href: https://code.patelsahil.in
-        description: Remote VS Code
-        icon: vscode.png
+    - Portainer:
+        href: https://portainer.patelsahil.in
+        description: Docker Management
+        icon: portainer.png
+        server: my-docker
+        container: portainer
+        widget:
+          type: portainer
+          url: http://portainer:9000
+          env: 3
+          showContainerCount: true
+          key: "{{HOMEPAGE_VAR_PORTAINER_TOKEN}}"
 
     - Homepage:
         href: https://home.patelsahil.in
         description: Dashboard
         icon: homepage.png
+        server: my-docker
+        container: homepage
 
-- Development:
-    - Docker Registry:
-        href: https://registry.patelsahil.in
-        description: Container Registry
-        icon: docker.png
-
-- Monitoring:
-    - Uptime Kuma:
-        href: https://uptime.patelsahil.in
-        description: Uptime Monitoring
-        icon: uptime-kuma.png
-
-    - Grafana:
-        href: https://grafana.patelsahil.in
-        description: Metrics Dashboard
-        icon: grafana.png
-
-    - Prometheus:
-        href: https://prometheus.patelsahil.in
-        description: Metrics Collection
-        icon: prometheus.png
+- Dev & Automation:
+    - Code Server:
+        href: https://code.patelsahil.in
+        description: Remote VS Code
+        icon: vscode.png
+        server: my-docker
+        container: code-server
 
     - n8n:
         href: https://n8n.patelsahil.in
         description: Automation Platform
         icon: n8n.png
+        server: my-docker
+        container: n8n
 
-- Productivity:
+    - Docker Registry:
+        href: https://registry.patelsahil.in
+        description: Container Registry
+        icon: docker.png
+
+- Monitoring & Telemetry:
+    - Uptime Kuma:
+        href: https://uptime.patelsahil.in
+        description: Uptime Monitoring
+        icon: uptime-kuma.png
+        server: my-docker
+        container: uptime-kuma
+        widget:
+          type: uptimekuma
+          url: http://uptime-kuma:3001
+          slug: service
+
+    - Grafana:
+        href: https://grafana.patelsahil.in
+        description: Metrics Dashboard
+        icon: grafana.png
+        server: my-docker
+        container: grafana
+
+    - Prometheus:
+        href: https://prometheus.patelsahil.in
+        description: Metrics Collection
+        icon: prometheus.png
+        server: my-docker
+        container: prometheus
+        widget:
+          type: prometheus
+          url: http://prometheus:9090
+
+- Personal Cloud & Media:
     - Nextcloud:
         href: https://nextcloud.patelsahil.in
         description: Personal Cloud
         icon: nextcloud.png
+        server: my-docker
+        container: nextcloud
 
     - Wiki.js:
         href: https://wiki.patelsahil.in
         description: Documentation
         icon: wikijs.png
 
-- Media:
     - Immich:
         href: https://immich.patelsahil.in
         description: Photo Backup
         icon: immich.png
 
-- AI:
+- AI Tools:
     - Open WebUI:
-        href: https://openwebui.patelsahil.in
+        href: https://ai.patelsahil.in
         description: AI Chat Interface
         icon: openai.png
-
-    - Ollama:
-        href: https://ollama.patelsahil.in
-        description: Local LLM
-        icon: ollama.png
+        server: my-docker
+        container: open-webui

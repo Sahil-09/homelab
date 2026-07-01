@@ -28,6 +28,8 @@ entryPoints:
     address: ":443"
     http:
       tls: {}
+      middlewares:
+        - error-pages-middleware@file
   ssh:
     address: :2222      
 
