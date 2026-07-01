@@ -1,8 +1,0 @@
-{
-    "workbench.colorTheme": "Material Palenight Theme",
-    "window.menuBarVisibility": "classic",
-    "terminal.integrated.allowChords": false,
-    "explorer.confirmDragAndDrop": false,
-    "git.enableSmartCommit": true,
-    "workbench.editor.enablePreview": false
-}

@@ -9,3 +9,4 @@ backups/
 logs/
 apps/code-server/config
 data/
+**/backup/
