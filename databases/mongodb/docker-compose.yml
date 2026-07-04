@@ -1,0 +1,17 @@
+services:
+  mongodb:
+    image: mongo:8.0.4
+    container_name: mongodb
+    restart: unless-stopped
+    volumes:
+      - /home/kraddy/homelab/data/mongodb:/data/db
+    networks:
+      - proxy
+    security_opt:
+      - no-new-privileges:true
+    env_file:
+      - ../../.env
+
+networks:
+  proxy:
+    external: true
