@@ -31,7 +31,7 @@ services:
       - POSTGRES_USER=${NEXTCLOUD_DB_USER}
       - POSTGRES_PASSWORD=${NEXTCLOUD_DB_PASSWORD}
       - REDIS_HOST=redis
-      - REDIS_HOST_PASSWORD=redis_secure_pass_9732
+      - REDIS_HOST_PASSWORD=${REDIS_HOST_PASSWORD}
       - NEXTCLOUD_TRUSTED_DOMAINS=nextcloud.patelsahil.in
       - TRUSTED_PROXIES=traefik
       - OVERWRITEPROTOCOL=https
