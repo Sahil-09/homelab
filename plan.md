@@ -395,7 +395,7 @@ Purpose:
 
 Status:
 
-* [ ] Pending
+* [x] Installed
 
 ---
 
@@ -456,7 +456,7 @@ Purpose:
 
 Status:
 
-* [ ] Pending
+* [x] Skipped (Using Nextcloud Photos instead)
 
 ---
 
@@ -549,10 +549,10 @@ Destination:
 8. [x] Install Grafana
 9. [x] Install n8n
 10. [x] Install Nextcloud
-11. [ ] Configure Grafana System Alerting
-12. [ ] Install Wiki.js (Documentation)
+11. [x] Configure Grafana System Alerting
+12. [x] Install Wiki.js (Documentation)
 13. [ ] Install Loki (Centralized Logs)
-14. [ ] Install Immich (Photo Backup)
+14. [x] Skip Immich (Using Nextcloud Photos)
 
 Target Outcome:
 
