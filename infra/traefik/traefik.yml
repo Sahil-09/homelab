@@ -30,8 +30,6 @@ entryPoints:
       tls: {}
       middlewares:
         - error-pages-middleware@file
-  ssh:
-    address: :2222      
 
 providers:
   docker:

@@ -1,0 +1,39 @@
+services:
+  docmost:
+    image: docmost/docmost:latest
+    container_name: docmost
+
+    restart: unless-stopped
+
+    environment:
+      - APP_URL=https://wiki.patelsahil.in
+      - APP_SECRET=${DOCMOST_SECRET}
+      - DATABASE_URL=postgresql://${DOCMOST_DB_USER}:${DOCMOST_DB_PASSWORD}@postgres:5432/${DOCMOST_DB_NAME}
+      - REDIS_URL=redis://:${REDIS_HOST_PASSWORD}@redis:6379
+
+    volumes:
+      - docmost_data:/app/data/storage
+
+    networks:
+      - proxy
+
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.docmost.rule=Host(`wiki.patelsahil.in`)
+      - traefik.http.routers.docmost.entrypoints=websecure
+      - traefik.http.routers.docmost.tls=true
+      - traefik.http.routers.docmost.middlewares=secure-headers@file,compress@file
+      - traefik.http.services.docmost.loadbalancer.server.port=3000
+
+    security_opt:
+      - no-new-privileges:true
+
+    env_file:
+      - ../../.env
+
+networks:
+  proxy:
+    external: true
+
+volumes:
+  docmost_data:

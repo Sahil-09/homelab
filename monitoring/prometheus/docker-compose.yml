@@ -31,6 +31,9 @@ services:
     security_opt:
       - no-new-privileges:true
 
+    env_file:
+      - ../../.env
+
   node-exporter:
     image: prom/node-exporter:latest
     container_name: node-exporter
@@ -54,6 +57,9 @@ services:
     security_opt:
       - no-new-privileges:true
 
+    env_file:
+      - ../../.env
+
   cadvisor:
     image: gcr.io/cadvisor/cadvisor:latest
     container_name: cadvisor
@@ -72,6 +78,9 @@ services:
 
     security_opt:
       - no-new-privileges:true
+
+    env_file:
+      - ../../.env
 
 networks:
   proxy:

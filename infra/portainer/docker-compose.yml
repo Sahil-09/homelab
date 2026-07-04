@@ -26,6 +26,9 @@ services:
     security_opt:
       - no-new-privileges:true
 
+    env_file:
+      - ../../.env
+
 volumes:
   portainer_data:
     external: true

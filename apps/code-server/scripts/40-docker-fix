@@ -1,0 +1,10 @@
+#!/bin/bash
+DOCKER_SOCK=/var/run/docker.sock
+if [ -S "$DOCKER_SOCK" ]; then
+  DOCKER_GID=$(stat -c "%g" "$DOCKER_SOCK")
+  if ! getent group "$DOCKER_GID" >/dev/null 2>&1; then
+    groupadd -g "$DOCKER_GID" docker-host
+  fi
+  usermod -aG docker-host abc
+fi
+chown -R abc:abc /config/.local/share/opencode 2>/dev/null || true

@@ -15,9 +15,12 @@ services:
       - NEXTCLOUD_DB_USER=${NEXTCLOUD_DB_USER}
       - NEXTCLOUD_DB_PASSWORD=${NEXTCLOUD_DB_PASSWORD}
       - NEXTCLOUD_DB_NAME=${NEXTCLOUD_DB_NAME}
-      - WIKI_DB_USER=${WIKI_DB_USER}
-      - WIKI_DB_PASSWORD=${WIKI_DB_PASSWORD}
-      - WIKI_DB_NAME=${WIKI_DB_NAME}
+      - DOCMOST_DB_USER=${DOCMOST_DB_USER}
+      - DOCMOST_DB_PASSWORD=${DOCMOST_DB_PASSWORD}
+      - DOCMOST_DB_NAME=${DOCMOST_DB_NAME}
+      - VAULTWARDEN_DB_USER=${VAULTWARDEN_DB_USER}
+      - VAULTWARDEN_DB_PASSWORD=${VAULTWARDEN_DB_PASSWORD}
+      - VAULTWARDEN_DB_NAME=${VAULTWARDEN_DB_NAME}
       - TZ=${TZ}
 
     volumes:
@@ -29,6 +32,9 @@ services:
 
     security_opt:
       - no-new-privileges:true
+
+    env_file:
+      - ../../.env
 
 networks:
   proxy:

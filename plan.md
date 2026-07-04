@@ -71,6 +71,7 @@ portainer.patelsahil.in
 traefik.patelsahil.in
 uptime.patelsahil.in
 grafana.patelsahil.in
+home.patelsahil.in
 ```
 
 ## Development
@@ -85,12 +86,7 @@ registry.patelsahil.in
 ```text
 nextcloud.patelsahil.in
 wiki.patelsahil.in
-```
-
-## Media
-
-```text
-immich.patelsahil.in
+vault.patelsahil.in
 ```
 
 ## Automation
@@ -103,8 +99,6 @@ n8n.patelsahil.in
 
 ```text
 ai.patelsahil.in
-ollama.patelsahil.in
-openwebui.patelsahil.in
 ```
 
 ---
@@ -114,29 +108,35 @@ openwebui.patelsahil.in
 ```text
 /home/kraddy/homelab
 
-├── infra
-│   ├── traefik
-│   ├── cloudflared
-│   └── homepage
-│
-├── services
+├── apps
 │   ├── code-server
-│   ├── portainer
-│   ├── nextcloud
-│   ├── immich
+│   ├── docmost
 │   ├── n8n
-│   ├── uptime-kuma
+│   ├── nextcloud
+│   ├── open-webui
+│   └── vaultwarden
+│
+├── databases
+│   ├── postgres
+│   └── redis
+│
+├── infra
+│   ├── cloudflared
+│   ├── homepage
+│   ├── portainer
+│   ├── traefik
+│   └── twingate
+│
+├── monitoring
 │   ├── grafana
 │   ├── prometheus
-│   ├── loki
-│   ├── wiki
-│   ├── open-webui
-│   └── ollama
+│   └── uptime-kuma
 │
 ├── data
 │   ├── postgres
 │   ├── redis
-│   ├── rabbitmq
+│   ├── uptime-kuma
+│   ├── nextcloud
 │   └── backups
 │
 ├── logs
@@ -191,6 +191,7 @@ Status:
 * [x] Docker Provider
 * [x] Cloudflare Integration
 * [x] Dashboard Route
+* [x] Set exposedByDefault=false for security
 
 ---
 
@@ -206,7 +207,7 @@ Status:
 * [x] Installed
 * [x] Tunnel Created
 * [x] Wildcard Route Configured
-* [x] Final Validation
+* [x] Single Root env-file Configuration
 
 ---
 
@@ -237,6 +238,7 @@ Status:
 * [x] pnpm
 * [x] Nest CLI
 * [x] Angular CLI
+* [x] Cleaned up Dockerfile with external initialization script
 
 ---
 
@@ -312,18 +314,6 @@ Status:
 
 ---
 
-## Loki
-
-Purpose:
-
-* Centralized Logs
-
-Status:
-
-* [ ] Pending
-
----
-
 # Data Services
 
 ## PostgreSQL 17
@@ -338,7 +328,7 @@ Status:
 
 ---
 
-## Redis
+## Redis (Standalone)
 
 Purpose:
 
@@ -347,19 +337,7 @@ Purpose:
 
 Status:
 
-* [ ] Pending
-
----
-
-## RabbitMQ
-
-Purpose:
-
-* Queue Processing
-
-Status:
-
-* [ ] Pending
+* [x] Decoupled into standalone databases service
 
 ---
 
@@ -385,7 +363,7 @@ Status:
 
 ---
 
-## Wiki.js
+## Docmost (Wiki.js alternative)
 
 Purpose:
 
@@ -456,25 +434,11 @@ Purpose:
 
 Status:
 
-* [x] Skipped (Using Nextcloud Photos instead)
+* [ ] Skipped (Using Nextcloud Photos instead)
 
 ---
 
 # Security
-
-## Cloudflare Access
-
-Protect:
-
-* Portainer
-* Grafana
-* Code Server
-
-Status:
-
-* [ ] Pending
-
----
 
 ## Fail2Ban
 
@@ -502,7 +466,6 @@ Status:
 ## Weekly
 
 * Nextcloud Backup
-* Immich Backup
 
 ## Monthly
 
@@ -512,28 +475,6 @@ Destination:
 
 * External HDD
 * Cloud Storage
-
----
-
-# Future Roadmap
-
-## Phase 2
-
-* Authentik SSO
-* Docker Registry
-* GitHub Actions Runner
-
-## Phase 3
-
-* Paperless-NGX
-* Home Assistant
-* WireGuard VPN
-
-## Phase 4
-
-* MCP Servers
-* Vector Database
-* AI Agents
 
 ---
 
@@ -550,10 +491,13 @@ Destination:
 9. [x] Install n8n
 10. [x] Install Nextcloud
 11. [x] Configure Grafana System Alerting
-12. [x] Install Wiki.js (Documentation)
-13. [ ] Install Loki (Centralized Logs)
-14. [x] Skip Immich (Using Nextcloud Photos)
+12. [x] Install Docmost (Documentation)
+13. [x] Reorganize scrambled service folders into apps/, databases/, monitoring/, and infra/
+14. [x] Consolidate multiple individual .env files into single root .env
+15. [x] Decouple Redis from Nextcloud into standalone databases/redis service
+16. [x] Refactor code-server initialization logic to externalize startup scripts
+17. [x] Secure Traefik default routing (exposedByDefault=false)
 
 Target Outcome:
 
-A fully remote-accessible personal cloud and development environment managed through Docker, Traefik, Cloudflare Tunnel, and Code Server.
+A fully remote-accessible personal cloud and development environment systematically organized and managed through Docker, Traefik, Cloudflare Tunnel, and Code Server.

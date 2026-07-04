@@ -83,15 +83,24 @@
         server: my-docker
         container: nextcloud
 
-    - Wiki.js:
+    - Docmost:
         href: https://wiki.patelsahil.in
-        description: Documentation
-        icon: wikijs.png
+        description: Documentation Wiki
+        icon: docmost.png
+        server: my-docker
+        container: docmost
 
     - Immich:
         href: https://immich.patelsahil.in
         description: Photo Backup
         icon: immich.png
+
+    - Vaultwarden:
+        href: https://vault.patelsahil.in
+        description: Password Manager
+        icon: vaultwarden.png
+        server: my-docker
+        container: vaultwarden
 
 - AI Tools:
     - Open WebUI:

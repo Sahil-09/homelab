@@ -12,8 +12,11 @@ services:
       - PUID=${PUID}
       - PGID=${PGID}
       - TZ=${TZ}
-      - PASSWORD=${PASSWORD}
-      - DEFAULT_WORKSPACE=${WORKSPACE}
+      - PASSWORD=${CODE_SERVER_PASSWORD}
+      - DEFAULT_WORKSPACE=${CODE_SERVER_WORKSPACE}
+
+    env_file:
+      - ../../.env
 
     volumes:
       - ./config:/config

@@ -1,0 +1,13 @@
+services:
+  twingate-connector:
+    image: twingate/connector:latest
+    container_name: twingate-connector
+    restart: unless-stopped
+    env_file:
+      - ../../.env
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
