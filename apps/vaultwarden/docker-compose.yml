@@ -9,7 +9,7 @@ services:
       - DOMAIN=https://vault.patelsahil.in
       - DATABASE_URL=postgresql://${VAULTWARDEN_DB_USER}:${VAULTWARDEN_DB_PASSWORD}@postgres:5432/${VAULTWARDEN_DB_NAME}
       - ADMIN_TOKEN=${VAULTWARDEN_ADMIN_TOKEN}
-      - SIGNUPS_ALLOWED=true
+      - SIGNUPS_ALLOWED=false
       - INVITATIONS_ALLOWED=true
       - SHOW_PASSWORD_HINT=false
       - LOG_LEVEL=info
