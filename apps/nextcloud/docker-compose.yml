@@ -41,7 +41,6 @@ services:
     security_opt:
       - no-new-privileges:true
 
-
 networks:
   proxy:
     external: true
