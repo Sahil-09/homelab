@@ -16,9 +16,8 @@
     memory: true
     cputemp: true
     uptime: true
-    network: true
     units: imperial
-    refresh: 2000
+    refresh: 10000
 
 - search:
     provider: duckduckgo

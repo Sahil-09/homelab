@@ -90,11 +90,6 @@
         server: my-docker
         container: docmost
 
-    - Immich:
-        href: https://immich.patelsahil.in
-        description: Photo Backup
-        icon: immich.png
-
     - Vaultwarden:
         href: https://vault.patelsahil.in
         description: Password Manager
