@@ -41,6 +41,13 @@
         server: my-docker
         container: n8n
 
+    - Infisical:
+        href: https://infisical.patelsahil.in
+        description: Key & Secrets Manager
+        icon: infisical.png
+        server: my-docker
+        container: infisical
+
     - Docker Registry:
         href: https://registry.patelsahil.in
         description: Container Registry

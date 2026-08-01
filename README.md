@@ -41,6 +41,7 @@ homelab/
 │
 ├── monitoring/
 │   ├── grafana/          # Telemetry and logging visualizer
+│   ├── loki/             # Centralized log aggregation (Loki + Promtail)
 │   ├── prometheus/       # System metrics scraper
 │   └── uptime-kuma/      # Uptime monitors & status reporting
 │

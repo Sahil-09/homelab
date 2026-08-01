@@ -1,0 +1,35 @@
+services:
+  loki:
+    image: grafana/loki:3.0.0
+    container_name: loki
+    restart: unless-stopped
+    command: -config.file=/etc/loki/loki-config.yml
+    volumes:
+      - ./config/loki-config.yml:/etc/loki/loki-config.yml:ro
+      - /home/kraddy/homelab/data/loki:/loki
+    networks:
+      - proxy
+    security_opt:
+      - no-new-privileges:true
+    env_file:
+      - ../../.env
+
+  promtail:
+    image: grafana/promtail:3.0.0
+    container_name: promtail
+    restart: unless-stopped
+    command: -config.file=/etc/promtail/promtail-config.yml
+    volumes:
+      - ./config/promtail-config.yml:/etc/promtail/promtail-config.yml:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+    networks:
+      - proxy
+    security_opt:
+      - no-new-privileges:true
+    env_file:
+      - ../../.env
+
+networks:
+  proxy:
+    external: true

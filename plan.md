@@ -129,6 +129,7 @@ ai.patelsahil.in
 │
 ├── monitoring
 │   ├── grafana
+│   ├── loki
 │   ├── prometheus
 │   └── uptime-kuma
 │
@@ -137,6 +138,7 @@ ai.patelsahil.in
 │   ├── redis
 │   ├── uptime-kuma
 │   ├── nextcloud
+│   ├── loki
 │   └── backups
 │
 ├── logs
@@ -307,6 +309,20 @@ Purpose:
 
 * Dashboards
 * Alerting
+
+Status:
+
+* [x] Installed
+
+---
+
+## Grafana Loki & Promtail
+
+Purpose:
+
+* Centralized Log Aggregation
+* Docker Container Log Scraping
+* Query logs inside Grafana using LogQL
 
 Status:
 
@@ -497,6 +513,7 @@ Destination:
 15. [x] Decouple Redis from Nextcloud into standalone databases/redis service
 16. [x] Refactor code-server initialization logic to externalize startup scripts
 17. [x] Secure Traefik default routing (exposedByDefault=false)
+18. [x] Install Grafana Loki & Promtail (Log Aggregation)
 
 Target Outcome:
 
