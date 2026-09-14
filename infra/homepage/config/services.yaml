@@ -104,6 +104,18 @@
         server: my-docker
         container: vaultwarden
 
+    - Minio:
+        href: https://minio.patelsahil.in
+        description: S3 Object Storage Console
+        icon: minio.png
+        server: my-docker
+        container: minio
+        widget:
+          type: minio
+          url: http://minio:9000
+          username: "{{HOMEPAGE_VAR_MINIO_ROOT_USER}}"
+          password: "{{HOMEPAGE_VAR_MINIO_ROOT_PASSWORD}}"
+
 - AI Tools:
     - Open WebUI:
         href: https://ai.patelsahil.in

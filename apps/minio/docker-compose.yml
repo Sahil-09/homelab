@@ -1,0 +1,45 @@
+services:
+  minio:
+    image: minio/minio:latest
+    container_name: minio
+    restart: unless-stopped
+    command: server /data --console-address ":9001"
+    ports:
+      - "9010:9000"  # S3 API host port (Option 2B)
+      - "9011:9001"  # Console host port (Option 2B)
+    environment:
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
+      - MINIO_SERVER_URL=https://s3.patelsahil.in
+      - MINIO_BROWSER_REDIRECT_URL=https://minio.patelsahil.in
+      - TZ=${TZ}
+    volumes:
+      - /home/kraddy/homelab/data/minio:/data
+    networks:
+      - proxy
+    security_opt:
+      - no-new-privileges:true
+    env_file:
+      - ../../.env
+    labels:
+      - traefik.enable=true
+      
+      # Router for Minio Web Console (UI)
+      - traefik.http.routers.minio-console.rule=Host(`minio.patelsahil.in`)
+      - traefik.http.routers.minio-console.entrypoints=websecure
+      - traefik.http.routers.minio-console.tls=true
+      - traefik.http.routers.minio-console.middlewares=secure-headers@file,compress@file
+      - traefik.http.routers.minio-console.service=minio-console-service
+      - traefik.http.services.minio-console-service.loadbalancer.server.port=9001
+
+      # Router for Minio S3 API
+      - traefik.http.routers.minio-s3.rule=Host(`s3.patelsahil.in`)
+      - traefik.http.routers.minio-s3.entrypoints=websecure
+      - traefik.http.routers.minio-s3.tls=true
+      - traefik.http.routers.minio-s3.middlewares=secure-headers@file,compress@file
+      - traefik.http.routers.minio-s3.service=minio-s3-service
+      - traefik.http.services.minio-s3-service.loadbalancer.server.port=9000
+
+networks:
+  proxy:
+    external: true

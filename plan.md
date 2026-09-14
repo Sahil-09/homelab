@@ -29,6 +29,19 @@ Build a self-hosted development and automation platform on an old laptop that pr
 * Docker Engine
 * Docker Compose
 
+## Master Exposed Ports Registry
+
+| Host Port | Service Name | Container Port | Purpose / Traffic Type | Configuration File | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **80** | Traefik | 80 | HTTP Entrypoint (automatic HTTPS redirect) | `infra/traefik/docker-compose.yml` | **Active** |
+| **443** | Traefik | 443 | HTTPS Entrypoint (secure router) | `infra/traefik/docker-compose.yml` | **Active** |
+| **2181** | *ZooKeeper* | 2181 | Client Connection Port (Future Service) | *N/A* | **Reserved** |
+| **8443** | Code Server | 8443 | Direct IDE Web Terminal Access | `apps/code-server/docker-compose.yml` | **Active** |
+| **9000** | Portainer | 9000 | HTTP Admin Console & API | `infra/portainer/docker-compose.yml` | **Active** |
+| **9010** | Minio (S3 API) | 9000 | S3-Compatible Storage API | `apps/minio/docker-compose.yml` | **Active** |
+| **9011** | Minio Console | 9001 | Minio Web Administration UI | `apps/minio/docker-compose.yml` | **Active** |
+| **9443** | Portainer | 9443 | HTTPS Portainer Console | `infra/portainer/docker-compose.yml` | **Active** |
+
 ---
 
 # Network Architecture
@@ -87,6 +100,8 @@ registry.patelsahil.in
 nextcloud.patelsahil.in
 wiki.patelsahil.in
 vault.patelsahil.in
+minio.patelsahil.in
+s3.patelsahil.in
 ```
 
 ## Automation
@@ -111,6 +126,7 @@ ai.patelsahil.in
 ├── apps
 │   ├── code-server
 │   ├── docmost
+│   ├── minio
 │   ├── n8n
 │   ├── nextcloud
 │   ├── open-webui
@@ -139,6 +155,7 @@ ai.patelsahil.in
 │   ├── uptime-kuma
 │   ├── nextcloud
 │   ├── loki
+│   ├── minio
 │   └── backups
 │
 ├── logs
@@ -393,6 +410,20 @@ Status:
 
 ---
 
+## Minio (Self-hosted S3)
+
+Purpose:
+
+* High-Performance S3 Compatible Object Storage
+* Nextcloud external storage backend
+* Backup storage target
+
+Status:
+
+* [x] Installed
+
+---
+
 # Automation Platform
 
 ## n8n
@@ -514,6 +545,7 @@ Destination:
 16. [x] Refactor code-server initialization logic to externalize startup scripts
 17. [x] Secure Traefik default routing (exposedByDefault=false)
 18. [x] Install Grafana Loki & Promtail (Log Aggregation)
+19. [x] Install and configure Minio (S3) with custom host port mappings & Port Dictionary tracking
 
 Target Outcome:
 
